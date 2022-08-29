@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     # 3rd party
     "rest_framework",
     "corsheaders",
+    'drf_yasg',
     # local
     "accounts",
     "answers",
@@ -109,7 +110,7 @@ DATABASES = {
     }
 }
 
-
+print(DATABASES['default'])
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
